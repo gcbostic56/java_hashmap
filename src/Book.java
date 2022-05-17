@@ -45,10 +45,14 @@ public class Book {
         }
     }
     public static void printValueIfNameContains(HashMap<String, Book> hashmap, String text) {
-        for (String stringThree : hashmap.keySet()) {
-            if (stringThree.contains(text)) {
-            System.out.println(hashmap.get(stringThree));
+        for (Book whatever : hashmap.values()) {
+            if (whatever.getName().contains(text)) {
+            System.out.println(whatever);
             }
         }
+    }
+
+    private boolean contains(String text) {
+        return false;
     }
 }

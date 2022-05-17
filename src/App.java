@@ -43,20 +43,20 @@ public class App {
     // System.out.println("---");
     // Program.printValuesOfKeysWhere(hashmap, ".e");
     // Exercise 4
-    // HashMap<String, Book> hashmap = new HashMap<>();
-    // hashmap.put("sense", new Book("Sense and Sensibility", 1811, "..."));
-    // hashmap.put("prejudice", new Book("Pride and prejudice", 1813, "...."));
+    HashMap<String, Book> hashmap = new HashMap<>();
+    hashmap.put("sense", new Book("Sense and Sensibility", 1811, "..."));
+    hashmap.put("prejudice", new Book("Pride and prejudice", 1813, "...."));
 
-    // Book.printValues(hashmap);
-    // System.out.println("---");
-    // Book.printValueIfNameContains(hashmap, "prejud");
+    Book.printValues(hashmap);
+    System.out.println("---");
+    Book.printValueIfNameContains(hashmap, "prejud");
 
-    //Exercise 5
-    IOU mattsIOU = new IOU();
-    mattsIOU.setSum("Arthur", 51.5);
-    mattsIOU.setSum("Michael", 30);
+    // //Exercise 5
+    // IOU mattsIOU = new IOU();
+    // mattsIOU.setSum("Arthur", 51.5);
+    // mattsIOU.setSum("Michael", 30);
 
-    System.out.println(mattsIOU.howMuchDoIOweTo("Arthur"));
-    System.out.println(mattsIOU.howMuchDoIOweTo("Michael"));
+    // System.out.println(mattsIOU.howMuchDoIOweTo("Arthur"));
+    // System.out.println(mattsIOU.howMuchDoIOweTo("Michael"));
 }
 }
